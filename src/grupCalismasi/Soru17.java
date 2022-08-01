@@ -1,4 +1,4 @@
-package odevler;
+package grupCalismasi;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package odevler;
-
-import org.w3c.dom.ls.LSOutput;
+package grupCalismasi;
 
 import java.util.Scanner;
 
