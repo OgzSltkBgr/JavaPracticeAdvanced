@@ -13,7 +13,6 @@ public class Kisi {
     }
 
     public Kisi(){
-
     }
 
     public String getAdSoyad() {
