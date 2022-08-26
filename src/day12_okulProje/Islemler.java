@@ -10,6 +10,7 @@ public class Islemler {
     static List<Kisi> ogrncList = new ArrayList<>();
     static Scanner scan = new Scanner(System.in);
     static String kisiTuru;
+    static int kisiSayisi=1;
     // static yazmamizin sebebi tum methodlardan ulasmak icin.
     // gokteki ay gibi heryeden ulaşılabilsin
 
@@ -98,7 +99,7 @@ public class Islemler {
                 if (ogrncList.get(i).getKimlikNo().equals(kimlikNo)) {
                     System.out.println("Aradiginiz " + kisiTuru + " " + ogrncList.get(i));
                     varMi = true;
-                    break;
+
                 }
             }
         }
@@ -168,9 +169,10 @@ public class Islemler {
 
         System.out.println("yas giriniz");
         int yas=scan.nextInt();
-        int kisiSayisi=1;
+
 
         if (kisiTuru.equals("OGRENCİ")){
+
             System.out.println(kisiSayisi+ ". Ogrencinin numarasini giriniz");
             scan.nextLine();
             String ögrenciNo = scan.next();
@@ -183,8 +185,9 @@ public class Islemler {
             //System.out.println(ogrncList);
 
         }else{
-            kisiSayisi=1;
+
             System.out.println("sicil no gir");
+            kisiSayisi++;
             String sicilNo=scan.next();
             scan.nextLine();
             System.out.println("bolum gir");
@@ -194,7 +197,7 @@ public class Islemler {
             Ogretmen ogretmen=new Ogretmen(adSoyad,kimlikNo,yas,bolum,sicilNo);
 
             ogrtmnList.add(ogretmen);
-            kisiSayisi++;
+
             //System.out.println(ogrtmnList);
         }
         System.out.println("Ekleme isleminiz basariyla gerceklestirilmistir");
